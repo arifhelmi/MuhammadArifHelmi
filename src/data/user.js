@@ -1,6 +1,6 @@
 const INFO = {
 	main: {
-		title: "Akbar Akma Portofolio",
+		title: "Muhammad Arif Helmi Portofolio",
 		name: "Muhammad Arif Helmi",
 		email: "helmio10394@gmail.com",
 		logo: "../logo.png",
