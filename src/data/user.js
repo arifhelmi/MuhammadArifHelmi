@@ -9,19 +9,22 @@ const INFO = {
 	socials: {
 		github: "https://github.com/arifhelmi",
 		linkedin: "https://www.linkedin.com/in/muhammadarifhelmi/",
-		// cv: "https://github.com/akbarakma/akbar-portofolio/blob/master/public/akbar-danial-akma-resume.pdf",
+		cv: "/akbar-danial-akma-resume.pdf",
 	},
 
 	homepage: {
-		title: "Full-Stack Developer with Backend Specialization",
+		eyebrow: "Backend-focused full-stack developer",
+		title: "I build reliable systems for products that need to move fast.",
 		description:
-			"My name is Muhammad Arif Helmi. I am a backend developer with expertise in Node.js and Typescript. I have experience in building applications from scratch and collaborating with larger teams.",
+			"My name is Muhammad Arif Helmi. I specialize in Node.js, TypeScript, APIs, and product-minded backend architecture. I enjoy turning early ideas into dependable services, then shaping them with teams until they are ready for real users.",
+		cta: "View Projects",
+		secondaryCta: "Let's Talk",
 	},
 
 	about: {
-		title: "I'm Muhammad Arif Helmi. I live in Jakarta, Indonesia, where I code for a living.",
+		title: "I am Muhammad Arif Helmi, a Jakarta-based developer who cares about clean systems and useful products.",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Resilient and fast-learning backend specialist, experienced in building applications from scratch and collaborating with larger teams. Passionate about delivering efficient and scalable solutions, Committed to continuous growth, I consistently achieve impactful results.",
+			"I have worked across social, commerce, and community products, often from early planning through production. My strongest lane is backend development, but I like staying close to the full product so the technical decisions still serve the user experience.",
 	},
 
 	articles: {
@@ -33,36 +36,44 @@ const INFO = {
 	projects: [
 		{
 			title: "Tannoi Mobile App",
+			category: "Social audio platform",
 			description:
-				"Developed the Backend on Tannoi, a social media app available on iOS and Android, enabling voice- based discussions and responses, from concept to deployment, building it entirely from scratch.",
+				"Built the backend foundation for a social media app on iOS and Android, enabling voice-based discussions and responses from concept to deployment.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			stack: ["Node.js", "TypeScript", "API Design", "Mobile Backend"],
 			linkText: "View Project",
 			link: null,
 		},
 
 		{
 			title: "Nusa Commerce (Jakarta, Indonesia)",
+			category: "Multi-channel commerce",
 			description:
-				"Nusacommerce is for e-commerce solutions designed to simplify and streamline the management of your online business efficiently. With its Multi-Channel Management feature, Nusacommerce enables you to integrate, manage, and synchronize multiple sales channels through a centralized dashboard.",
+				"Developed backend capabilities for an e-commerce operations platform that helps sellers manage and synchronize multiple sales channels from one dashboard.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			stack: ["Node.js", "Integrations", "E-commerce", "Dashboards"],
 			linkText: "View Project",
 			link: "https://www.nusacommerce.com",
 		},
 
 		{
 			title: "Fourz Mobile Apps",
+			category: "Content ranking app",
 			description:
-				"Developed the Backend on Fourz, an iOS app that allows users to create, share, and rank content in a unique four-image format, starting the project from scratch.",
+				"Created backend services for an iOS app where users create, share, and rank content through a four-image format.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+			stack: ["Backend Services", "Content Models", "iOS Backend"],
 			linkText: "View Project",
 			link: null,
 		},
 
 		{
 			title: "Wrga Mobile Apps (Jakarta, Indonesia)",
+			category: "Neighborhood community",
 			description:
-				"Led the Backend development of Wrga, an Android app that enables users to post, comment, and like content specific to their neighborhood, fostering a sense of community.",
+				"Led backend development for an Android community app with posting, comments, likes, and neighborhood-focused content flows.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+			stack: ["Node.js", "Community Features", "Android Backend"],
 			linkText: "View Project",
 			link: null,
 		},
@@ -70,12 +81,49 @@ const INFO = {
 
 		{
 			title: "Muhammad Arif Helmi Portofolio Website (Jakarta, Indonesia)",
+			category: "Personal website",
 			description:
-				"Created a ReactJS-based portfolio website that makes it easy for people to get to know me better. With a simple and user-friendly interface, visitors can explore my skills, experiences, and projects effortlessly. It's a convenient way to access information about me and delve into my portfolio.",
-			// logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			// linkText: "View Project",
-			// link: "https://www.akbarakma.tech",
+				"Designed and built a React portfolio that presents skills, experience, and selected work in a clear, fast, and responsive format.",
+			stack: ["React", "CSS", "Responsive UI"],
+			linkText: "View Project",
+			link: null,
 		},
+	],
+
+	highlights: [
+		{
+			value: "4+",
+			label: "production apps",
+		},
+		{
+			value: "Node.js",
+			label: "main backend stack",
+		},
+		{
+			value: "Jakarta",
+			label: "open to remote teams",
+		},
+	],
+
+	skills: [
+		{
+			title: "Backend",
+			items: ["Node.js", "TypeScript", "REST APIs", "Auth", "Data modeling"],
+		},
+		{
+			title: "Product Delivery",
+			items: ["MVP planning", "Integrations", "Team collaboration", "Debugging"],
+		},
+		{
+			title: "Frontend",
+			items: ["React", "Responsive UI", "Design polish", "Performance basics"],
+		},
+	],
+
+	principles: [
+		"Start with the user flow, then shape the service around it.",
+		"Keep APIs predictable, documented, and easy for teammates to trust.",
+		"Build the smallest useful version, then improve it with real feedback.",
 	],
 };
 

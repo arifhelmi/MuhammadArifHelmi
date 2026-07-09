@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import INFO from "../../data/user";
+
 import "./styles/footer.css";
 
 const Footer = () => {
+	const year = new Date().getFullYear();
+
 	return (
 		<React.Fragment>
 			<div className="footer">
@@ -18,9 +22,6 @@ const Footer = () => {
 						<li className="footer-nav-link-item">
 							<Link to="/projects">Projects</Link>
 						</li>
-						{/* <li className="footer-nav-link-item">
-							<Link to="/articles">Articles</Link>
-						</li> */}
 						<li className="footer-nav-link-item">
 							<Link to="/contact">Contact</Link>
 						</li>
@@ -28,8 +29,8 @@ const Footer = () => {
 				</div>
 
 				<div className="footer-credits">
-					<div className="footer-credits-text" style={{ color: 'black' }}>
-						© 2023 Muhammad Arif Helmi. All Rights Reserved.
+					<div className="footer-credits-text">
+						&copy; {year} {INFO.main.name}. All rights reserved.
 					</div>
 				</div>
 			</div>

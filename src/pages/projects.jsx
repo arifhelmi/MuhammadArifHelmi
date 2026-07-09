@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+import NavBar from "../components/common/navBar";
+import Reveal from "../components/common/Reveal";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
@@ -12,7 +12,6 @@ import SEO from "../data/seo";
 import "./styles/projects.css";
 
 const Projects = () => {
-
 	const currentSEO = SEO.find((item) => item.page === "projects");
 
 	return (
@@ -28,35 +27,38 @@ const Projects = () => {
 
 			<div className="page-content">
 				<NavBar active="projects" />
-				<div className="content-wrapper">
-					<div className="projects-logo-container">
-						<div className="projects-logo">
-							<Logo width={46} />
-						</div>
-					</div>
-					<div className="projects-container">
-						<div className="title projects-title">
-							Things I’ve made so far.
-						</div>
+				<main className="content-wrapper projects-container">
+					<Reveal as="section" className="projects-hero">
+						<div className="eyebrow">Projects</div>
+						<h1 className="title projects-title">
+							Backend-heavy products, mobile apps, and web experiences.
+						</h1>
 
-						<div className="subtitle projects-subtitle" style={{ color: 'black' }}>
-						Here you will find a collection of projects I have worked on throughout my career, 
-						either independently or as part of a larger team. These projects highlight my ability 
-						to create from scratch and collaborate effectively. From solo ventures to group efforts, 
-						each project represents a significant milestone, showcasing my technical skills, 
-						adaptability, and passion for delivering exceptional solutions. 
-						Explore this section to witness the diverse range of projects I have undertaken, 
-						spanning various industries and technologies, and gain insights into my growth as a professional.
-						</div>
+						<p className="subtitle projects-subtitle">
+							Here are selected projects I have worked on independently and
+							with teams. The common thread is practical product delivery:
+							clear backend contracts, reliable integrations, and features
+							that can grow after launch.
+						</p>
 
-						<div className="projects-list">
-							<AllProjects />
+						<div className="projects-summary">
+							{INFO.highlights.map((highlight) => (
+								<div className="summary-item" key={highlight.label}>
+									<strong>{highlight.value}</strong>
+									<span>{highlight.label}</span>
+								</div>
+							))}
 						</div>
-					</div>
+					</Reveal>
+
+					<Reveal as="section" className="projects-list" delay={120}>
+						<AllProjects />
+					</Reveal>
+
 					<div className="page-footer">
 						<Footer />
 					</div>
-				</div>
+				</main>
 			</div>
 		</React.Fragment>
 	);

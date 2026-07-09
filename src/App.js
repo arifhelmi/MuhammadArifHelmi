@@ -7,6 +7,7 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
+import SmoothScroll from "./components/common/SmoothScroll";
 
 import "./app.css";
 
@@ -16,6 +17,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<SmoothScroll />
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />

@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 import NavBar from "../components/common/navBar";
-import Logo from "../components/common/logo";
+import Reveal from "../components/common/Reveal";
 
 import INFO from "../data/user";
 
@@ -19,30 +17,18 @@ const Notfound = () => {
 		<React.Fragment>
 			<div className="not-found page-content">
 				<NavBar />
-				<div className="content-wrapper">
-					<div className="notfound-logo-container">
-						<div className="projects-logo">
-							<Logo width={46} />
-						</div>
-					</div>
-					<div className="notfound-container">
-						<div className="notfound-message">
-							<div className="notfound-title">
-								Oops! <FontAwesomeIcon icon={faFaceSadTear} />
-							</div>
-							<div className="not-found-message">
-								We can't seem to find the page you're looking
-								for.
-								<br />
-								The requested URL "{window.location.href}" was
-								not found on this server.
-							</div>
-							<a href="/" className="not-found-link">
-								Go back to the home page
-							</a>
-						</div>
-					</div>
-				</div>
+				<main className="content-wrapper notfound-container">
+					<Reveal className="notfound-message">
+						<div className="notfound-kicker">404</div>
+						<h1 className="notfound-title">Page not found</h1>
+						<p className="not-found-message">
+							The page "{window.location.pathname}" is not available.
+						</p>
+						<Link to="/" className="primary-action">
+							Go back home
+						</Link>
+					</Reveal>
+				</main>
 			</div>
 		</React.Fragment>
 	);
