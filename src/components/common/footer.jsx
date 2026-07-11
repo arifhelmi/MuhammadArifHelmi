@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 import INFO from "../../data/user";
 
@@ -9,32 +11,37 @@ const Footer = () => {
 	const year = new Date().getFullYear();
 
 	return (
-		<React.Fragment>
-			<div className="footer">
-				<div className="footer-links">
-					<ul className="footer-nav-link-list">
-						<li className="footer-nav-link-item">
-							<Link to="/">Home</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/about">About</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/projects">Projects</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
-						</li>
-					</ul>
-				</div>
-
-				<div className="footer-credits">
-					<div className="footer-credits-text">
-						&copy; {year} {INFO.main.name}. All rights reserved.
-					</div>
-				</div>
+		<footer className="footer">
+			<div className="footer-identity">
+				<span className="footer-mark">MH</span>
+				<span>
+					<strong>{INFO.main.name}</strong>
+					<small>{INFO.main.role}</small>
+				</span>
 			</div>
-		</React.Fragment>
+
+			<nav className="footer-links" aria-label="Footer navigation">
+				<a href="/#about">About</a>
+				<a href="/#experience">Experience</a>
+				<a href="/#projects">Projects</a>
+				<a href="/#skills">Skills</a>
+				<a href="/#contact">Contact</a>
+			</nav>
+
+			<div className="footer-socials">
+				<a href={INFO.socials.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+					<FontAwesomeIcon icon={faGithub} />
+				</a>
+				<a href={INFO.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+					<FontAwesomeIcon icon={faLinkedinIn} />
+				</a>
+				<a href={`mailto:${INFO.main.email}`} aria-label="Email Muhammad Arif Helmi">
+					<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+				</a>
+			</div>
+
+			<p className="footer-credits">&copy; {year} {INFO.main.name}. All rights reserved.</p>
+		</footer>
 	);
 };
 

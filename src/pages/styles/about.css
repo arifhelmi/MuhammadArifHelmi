@@ -1,122 +1,17 @@
 @import "../../data/styles.css";
 
-.about-hero {
-	align-items: center;
-	display: grid;
-	gap: 64px;
-	grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
-	padding-bottom: 72px;
+.about-page .portfolio-about {
+	padding-top: 170px;
 }
 
-.about-title {
-	max-width: 760px;
-}
-
-.about-subtitle {
-	max-width: 720px;
-}
-
-.about-image-container {
-	justify-self: end;
-	width: min(100%, 430px);
-}
-
-.about-image-wrapper {
-	aspect-ratio: 4 / 5;
-	background: var(--surface-muted);
-	border: 1px solid var(--border-color);
-	border-radius: 8px;
-	box-shadow: var(--shadow-lift);
-	overflow: hidden;
-}
-
-.about-image {
-	display: block;
-	height: 100%;
-	object-fit: cover;
-	object-position: center bottom;
-	width: 100%;
-}
-
-.about-detail-grid {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-	margin-top: 24px;
-}
-
-.about-story,
-.about-social-panel {
-	background: rgba(255, 255, 255, 0.82);
-	border: 1px solid var(--border-color);
-	border-radius: 8px;
-	box-shadow: 0 12px 36px rgba(15, 23, 42, 0.05);
-	padding: 28px;
-}
-
-.about-story p {
-	color: var(--secondary-color);
-	font-size: 16px;
-	line-height: 1.8;
-	margin: 18px 0 0;
-}
-
-.principles-list {
-	display: grid;
-	gap: 12px;
-	list-style: none;
-	margin: 26px 0 0;
-	padding: 0;
-}
-
-.principles-list li {
-	color: var(--primary-color);
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 1.6;
-	padding-left: 28px;
-	position: relative;
-}
-
-.principles-list li::before {
-	background: var(--accent-color);
-	border-radius: 999px;
-	content: "";
-	height: 8px;
-	left: 2px;
-	position: absolute;
-	top: 8px;
-	width: 8px;
-}
-
-.about-skills {
-	margin-top: 92px;
-}
-
-@media (max-width: 980px) {
-	.about-hero,
-	.about-detail-grid {
-		grid-template-columns: 1fr;
-	}
-
-	.about-image-container {
-		justify-self: start;
-		max-width: 520px;
+@media (max-width: 900px) {
+	.about-page .portfolio-about {
+		padding-top: 138px;
 	}
 }
 
-@media (max-width: 640px) {
-	.about-hero {
-		gap: 36px;
-		padding-bottom: 48px;
-	}
-
-	.about-story,
-	.about-social-panel {
-		padding: 22px;
-	}
-
-	.about-skills {
-		margin-top: 68px;
+@media (max-width: 680px) {
+	.about-page .portfolio-about {
+		padding-top: 116px;
 	}
 }

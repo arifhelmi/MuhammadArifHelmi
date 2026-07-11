@@ -5,15 +5,20 @@ import App from "./App";
 
 test("renders the portfolio homepage", () => {
 	render(
-		<BrowserRouter>
+		<BrowserRouter
+			future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
+		>
 			<App />
 		</BrowserRouter>
 	);
 
 	expect(
 		screen.getByRole("heading", {
-			name: /I build reliable systems for products/i,
+			level: 1,
+			name: /Muhammad Arif Helmi/i,
 		})
 	).toBeInTheDocument();
-	expect(screen.getByRole("navigation")).toBeInTheDocument();
+	expect(
+		screen.getByRole("navigation", { name: /main navigation/i })
+	).toBeInTheDocument();
 });

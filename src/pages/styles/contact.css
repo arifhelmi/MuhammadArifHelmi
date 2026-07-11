@@ -1,105 +1,18 @@
 @import "../../data/styles.css";
 
-.contact-hero {
-	max-width: 860px;
+.contact-page .portfolio-contact {
+	min-height: calc(100vh - 178px);
+	padding-top: 170px;
 }
 
-.contact-title {
-	max-width: 840px;
-}
-
-.contact-subtitle {
-	max-width: 740px;
-}
-
-.contact-actions {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 12px;
-	margin-top: 34px;
-}
-
-.copy-button {
-	appearance: none;
-}
-
-.contact-grid {
-	display: grid;
-	gap: 16px;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	margin-top: 68px;
-}
-
-.contact-card {
-	align-items: center;
-	background: rgba(255, 255, 255, 0.84);
-	border: 1px solid var(--border-color);
-	border-radius: 8px;
-	box-shadow: 0 12px 36px rgba(15, 23, 42, 0.05);
-	color: var(--primary-color);
-	display: grid;
-	gap: 16px;
-	grid-template-columns: 48px 1fr 18px;
-	padding: 18px;
-	text-decoration: none;
-	transition:
-		border-color 180ms ease,
-		box-shadow 180ms ease,
-		transform 180ms ease;
-}
-
-.contact-card:hover {
-	border-color: rgba(15, 118, 110, 0.35);
-	box-shadow: var(--shadow-soft);
-	transform: translateY(-4px);
-}
-
-.contact-card-icon {
-	align-items: center;
-	background: rgba(15, 118, 110, 0.09);
-	border-radius: 8px;
-	color: var(--link-color);
-	display: inline-flex;
-	font-size: 18px;
-	height: 48px;
-	justify-content: center;
-	width: 48px;
-}
-
-.contact-card span {
-	min-width: 0;
-}
-
-.contact-card strong,
-.contact-card small {
-	display: block;
-}
-
-.contact-card strong {
-	font-size: 15px;
-	line-height: 1.2;
-	margin-bottom: 5px;
-}
-
-.contact-card small {
-	color: var(--secondary-color);
-	font-size: 13px;
-	font-weight: 700;
-	overflow-wrap: anywhere;
-}
-
-.contact-card-arrow {
-	color: var(--tertiary-color);
-	font-size: 12px;
-}
-
-@media (max-width: 720px) {
-	.contact-actions {
-		display: grid;
+@media (max-width: 900px) {
+	.contact-page .portfolio-contact {
+		padding-top: 138px;
 	}
+}
 
-	.contact-grid {
-		grid-template-columns: 1fr;
-		margin-top: 48px;
+@media (max-width: 680px) {
+	.contact-page .portfolio-contact {
+		padding-top: 116px;
 	}
 }
