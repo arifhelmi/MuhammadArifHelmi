@@ -11,7 +11,7 @@ const INFO = {
 	socials: {
 		github: "https://github.com/arifhelmi",
 		linkedin: "https://www.linkedin.com/in/muhammadarifhelmi/",
-		cv: "/Muhammam-Arif-Helmi-resume.pdf",
+		cv: "/muhammad-arif-helmi-resume.pdf",
 	},
 
 	homepage: {
