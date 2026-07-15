@@ -12,8 +12,8 @@ const ExperienceSection = () => {
 				<Reveal>
 					<SectionHeading
 						eyebrow="02 / Experience"
-						title="Product experience shaped by real delivery."
-						description="Selected work across social, commerce, content, and community products. The focus stays consistent: clear backend contracts, dependable data flows, and software that can move into production."
+						title="Experience shaped by enterprise delivery."
+						description="Selected roles across procurement systems, AI annotation, attendance tools, and application development. The focus stays consistent: reliable workflows, stable releases, and software that can survive production use."
 					/>
 				</Reveal>
 

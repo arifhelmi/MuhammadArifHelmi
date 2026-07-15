@@ -20,7 +20,7 @@ const AboutSection = () => {
 				<SectionHeading
 					eyebrow="01 / About"
 					title={INFO.about.title}
-					description="A backend-first perspective, with enough full-stack range to keep technical choices connected to the product experience."
+					description="A full stack perspective shaped by procurement systems, attendance tools, e-commerce flows, and production support."
 				/>
 			</Reveal>
 

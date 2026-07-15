@@ -1,9 +1,9 @@
 const INFO = {
 	main: {
-		title: "Muhammad Arif Helmi | Full-Stack Developer",
+		title: "Muhammad Arif Helmi | Full Stack Developer",
 		name: "Muhammad Arif Helmi",
 		email: "helmio10394@gmail.com",
-		role: "Full-Stack Developer with Backend Specialization",
+		role: "Full Stack Developer",
 		location: "Jakarta, Indonesia",
 		logo: "../logo.png",
 	},
@@ -15,193 +15,198 @@ const INFO = {
 	},
 
 	homepage: {
-		eyebrow: "Available for selected opportunities",
+		eyebrow: "Available for full stack and product delivery roles",
 		name: "Muhammad Arif Helmi",
-		title: "Full-Stack Developer with Backend Specialization",
+		title: "Full Stack Developer",
 		description:
-			"I design and develop scalable APIs, clean application architecture, and digital products that are maintainable, performant, and ready for real-world use.",
+			"I build enterprise software, e-commerce platforms, attendance systems, and marketplace products that stay reliable in production.",
 		cta: "View My Work",
 		secondaryCta: "Contact Me",
 	},
 
 	about: {
-		title: "Engineering dependable products from the service layer to the interface.",
+		title: "Building dependable software across business workflows and product delivery.",
 		description:
-			"I am a Jakarta-based developer focused on backend systems, API development, databases, and practical web applications. I have helped build social, commerce, and community products from early planning through production, while collaborating closely with product and engineering teams.",
+			"I am a Jakarta-based full stack developer with experience in procurement systems, e-commerce platforms, attendance tools, and marketplace applications. I work across ASP.NET MVC, C#, Laravel, React.js, and SQL to turn business workflows into practical features.",
 		secondary:
-			"My strongest work happens where product requirements meet reliable technical decisions: predictable APIs, maintainable data models, thoughtful integrations, and interfaces that stay clear for the people using them.",
+			"My focus is to improve systems without breaking the rules they already depend on. I pay attention to traceability, permissions, data integrity, and UI changes that are safe to ship.",
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "I care about code that is useful in production, not just impressive in a demo.",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Selected notes on full stack development, product delivery, and the kinds of systems I enjoy building.",
 	},
 
 	projects: [
 		{
-			title: "Tannoi Mobile App",
-			category: "Social audio platform",
-			initial: "TA",
+			title: "E-Procurement Management System (EPCMS) Development",
+			category: "Enterprise procurement system",
+			initial: "EP",
 			description:
-				"Built the backend foundation for a social media app on iOS and Android, enabling voice-based discussions and responses from concept to deployment.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			stack: ["Node.js", "TypeScript", "API Design", "Mobile Backend"],
-			features: ["Voice discussion flows", "Production-ready API foundation"],
-			linkText: "View Project",
+				"Enhanced a procurement platform across pre-qualification, invitation, submission, evaluation, negotiation, clarification, objection, tender results, and bond management.",
+			stack: ["ASP.NET MVC", "C#", "Razor", "JavaScript", "jQuery", "SQL Server"],
+			features: [
+				"Approval history and reviewer tracking",
+				"Role-based controls and vendor workflows",
+			],
+			linkText: "Private Product",
 			link: null,
 		},
-
 		{
-			title: "Nusa Commerce",
-			category: "Multi-channel commerce",
+			title: "Chandravika Printing Website",
+			category: "Printing commerce platform",
+			initial: "CP",
+			description:
+				"Built a Laravel-based printing e-commerce platform with REST APIs, authentication, online payment support, and optimized MySQL queries.",
+			stack: ["Laravel", "REST APIs", "Authentication", "MySQL"],
+			features: [
+				"Online order processing",
+				"Faster and more efficient data access",
+			],
+			linkText: "Private Product",
+			link: null,
+		},
+		{
+			title: "Nusa Commerce Multi-Channel Management",
+			category: "Marketplace operations",
 			initial: "NC",
 			description:
-				"Developed backend capabilities for an e-commerce operations platform that helps sellers manage and synchronize multiple sales channels from one dashboard.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			stack: ["Node.js", "Integrations", "E-commerce", "Dashboards"],
-			features: ["Channel synchronization", "Unified seller operations"],
-			linkText: "View Project",
-			link: "https://www.nusacommerce.com",
-		},
-
-		{
-			title: "Fourz Mobile Apps",
-			category: "Content ranking app",
-			initial: "FZ",
-			description:
-				"Created backend services for an iOS app where users create, share, and rank content through a four-image format.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			stack: ["Backend Services", "Content Models", "iOS Backend"],
-			features: ["Content ranking", "Create and share workflows"],
-			linkText: "View Project",
+				"Developed centralized inventory and order management with Shopee, Lazada, and other marketplace integrations.",
+			stack: ["Marketplace Integrations", "Inventory", "Order Management", "Dashboard UI"],
+			features: [
+				"Reduced manual reconciliation",
+				"Improved cross-channel visibility",
+			],
+			linkText: "Private Product",
 			link: null,
 		},
-
 		{
-			title: "Wrga Mobile Apps",
-			category: "Neighborhood community",
-			initial: "WR",
+			title: "Online Invitation Platform",
+			category: "Custom invitation builder",
+			initial: "OI",
 			description:
-				"Led backend development for an Android community app with posting, comments, likes, and neighborhood-focused content flows.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			stack: ["Node.js", "Community Features", "Android Backend"],
-			features: ["Community interactions", "Neighborhood content feeds"],
-			linkText: "View Project",
+				"Designed customizable invitations for weddings, birthdays, and other events with themed templates and section-based editing.",
+			stack: ["Template Editing", "UI Components", "Personalization", "Web Delivery"],
+			features: [
+				"AI image generation for visuals",
+				"Faster page creation for non-technical users",
+			],
+			linkText: "Private Product",
 			link: null,
 		},
-
-
 		{
-			title: "Muhammad Arif Helmi Portfolio",
-			category: "Personal website",
-			initial: "MH",
+			title: "Personal Portfolio and Company Profile Websites",
+			category: "Brand and portfolio websites",
+			initial: "PP",
 			description:
-				"Designed and built a React portfolio that presents skills, experience, and selected work in a clear, fast, and responsive format.",
-			stack: ["React", "CSS", "Responsive UI"],
-			features: ["Accessible interactions", "Responsive presentation"],
-			linkText: "View Project",
+				"Built responsive React and CSS websites for personal branding, Nusa Code, and Zenvora with service pages, project showcases, and animations.",
+			stack: ["React", "CSS", "Responsive UI", "Animations"],
+			features: [
+				"Clear service and project presentation",
+				"Responsive experience across devices",
+			],
+			linkText: "Private Product",
 			link: null,
 		},
 	],
 
 	experience: [
 		{
-			project: "Tannoi Mobile App",
-			role: "Backend Developer",
-			location: "iOS & Android",
+			project: "PT Sentrakom Binatama",
+			role: "Full Stack Developer",
+			location: "2025 - Present",
 			description:
-				"Built the backend foundation for a voice-first social platform, translating product flows into services that supported discussion and response features.",
-			impact: "Delivered the core backend from initial concept through deployment.",
-			stack: ["Node.js", "TypeScript", "REST API", "Mobile Backend"],
+				"Maintained and enhanced an enterprise E-Procurement Management System with ASP.NET MVC, C#, Razor, JavaScript, jQuery, and SQL Server.",
+			impact:
+				"Improved procurement modules, approval history, reviewer tracking, permissions, document validation, and vendor controls.",
+			stack: ["ASP.NET MVC", "C#", "Razor", "JavaScript", "SQL Server"],
 		},
 		{
-			project: "Nusa Commerce",
-			role: "Backend Developer",
-			location: "Jakarta, Indonesia",
+			project: "PT Nexter AI - Korea",
+			role: "AI Annotator",
+			location: "2024 - 2025",
 			description:
-				"Developed backend capabilities for an operations platform that brings multiple e-commerce channels into a single seller workflow.",
-			impact: "Helped simplify multi-channel synchronization and day-to-day commerce operations.",
-			stack: ["Node.js", "API Integration", "E-commerce", "Data Flows"],
+				"Annotated and reviewed text and image datasets against quality guidelines, producing consistent training data for AI development.",
+			impact:
+				"Worked with developers to resolve labeling issues and improve dataset accuracy and model reliability.",
+			stack: ["Data Labeling", "Quality Review", "Text Annotation", "Image Annotation"],
 		},
 		{
-			project: "Fourz Mobile Apps",
-			role: "Backend Developer",
-			location: "iOS",
+			project: "Badan Pengawas Obat dan Makanan (BPOM) - Jakarta",
+			role: "Full Stack Developer",
+			location: "2022 - 2023",
 			description:
-				"Created backend services and content models for an app centered on creating, sharing, and ranking four-image posts.",
-			impact: "Supported the product's core publishing and ranking interactions.",
-			stack: ["Backend Services", "Content Modeling", "API Design"],
+				"Developed a Laravel and MySQL QR attendance system, streamlining check-ins and reducing manual recording.",
+			impact:
+				"Maintained the application, resolved issues, and deployed it to a cloud droplet to improve availability and maintainability.",
+			stack: ["Laravel", "MySQL", "QR Attendance", "Cloud Deployment"],
 		},
 		{
-			project: "Wrga Mobile Apps",
-			role: "Lead Backend Developer",
-			location: "Jakarta, Indonesia",
+			project: "PT Telkom Akses - Jakarta",
+			role: "Data Labeling & Application Development",
+			location: "2016 - 2017",
 			description:
-				"Led backend development for a neighborhood community app with posting, commenting, likes, and local content discovery.",
-			impact: "Delivered the service layer behind the app's main community interactions.",
-			stack: ["Node.js", "Community Platform", "Android Backend"],
+				"Labeled Optical Distribution Point (ODP) data for telecommunications asset management, improving infrastructure data accuracy and usability.",
+			impact:
+				"Developed a Visual Basic company profile application and supported testing and UI refinement for better presentation quality.",
+			stack: ["Data Labeling", "Visual Basic", "UI Testing", "Company Profile App"],
 		},
 	],
 
 	highlights: [
 		{
-			value: "4+",
-			label: "Production products",
+			value: "4",
+			label: "Core roles listed",
 		},
 		{
-			value: "Node.js + TS",
-			label: "Core backend stack",
+			value: "ASP.NET + Laravel",
+			label: "Main delivery stack",
 		},
 		{
-			value: "API-first",
-			label: "Engineering approach",
+			value: "Enterprise + Product",
+			label: "Project scope",
 		},
 		{
 			value: "Jakarta",
-			label: "Remote collaboration",
+			label: "Based in Indonesia",
 		},
 	],
 
 	skills: [
 		{
-			title: "Backend",
-			code: "BE",
-			items: ["Node.js", "Express.js", "REST API", "Authentication", "API Integration"],
-		},
-		{
-			title: "Frontend",
-			code: "FE",
-			items: ["React", "Next.js", "Responsive UI", "CSS", "Web Performance"],
-		},
-		{
-			title: "Database",
-			code: "DB",
-			items: ["PostgreSQL", "SQL Server", "Data Modeling", "Query Design"],
-		},
-		{
 			title: "Languages",
-			code: "PL",
-			items: ["TypeScript", "JavaScript", "SQL", "HTML", "CSS"],
+			code: "LG",
+			items: ["C#", "Java", "PHP", "Python", "TypeScript", "JavaScript"],
 		},
 		{
-			title: "Delivery & Tools",
-			code: "DX",
-			items: ["Git", "Docker", "API Testing", "Debugging", "Team Collaboration"],
+			title: "Frameworks",
+			code: "FW",
+			items: ["ASP.NET MVC", ".NET", "Laravel", "React.js", "CodeIgniter", "Node.js"],
+		},
+		{
+			title: "Frontend & Tools",
+			code: "FT",
+			items: ["Razor", "HTML", "CSS", "jQuery", "AJAX", "REST APIs", "Git"],
+		},
+		{
+			title: "Databases",
+			code: "DB",
+			items: ["SQL Server", "MySQL", "PostgreSQL", "Redis"],
 		},
 	],
 
 	quickFacts: [
-		{ label: "Primary focus", value: "Backend systems & APIs" },
-		{ label: "Product scope", value: "Web and mobile applications" },
-		{ label: "Delivery style", value: "From planning to production" },
-		{ label: "Collaboration", value: "Product and engineering teams" },
+		{ label: "Primary focus", value: "Enterprise workflows & product delivery" },
+		{ label: "Main stack", value: "ASP.NET MVC, Laravel, React.js, SQL" },
+		{ label: "Strength", value: "Turning business flow into stable features" },
+		{ label: "Location", value: "Jakarta, Indonesia" },
 	],
 
 	principles: [
-		"Start with the product goal, then shape the service around it.",
-		"Keep APIs predictable, maintainable, and easy for teams to trust.",
-		"Build for real use, then improve with evidence and feedback.",
+		"Understand the workflow before changing the code.",
+		"Protect business rules while improving the user experience.",
+		"Ship regression-aware updates that stay maintainable over time.",
 	],
 };
 

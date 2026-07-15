@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MH favicon">
+  <rect width="64" height="64" rx="16" fill="#0f1115"/>
+  <path d="M18 46V18h5l9 13 9-13h5v28h-6V28l-8 11h-0.2l-8-11v18z" fill="#f1d3a5"/>
+  <path d="M47 22.5h-7.8l-7.1 10-7.1-10H17V18h6.1l7.1 10 7.1-10H47z" fill="#7c5c3c" opacity=".35"/>
+</svg>

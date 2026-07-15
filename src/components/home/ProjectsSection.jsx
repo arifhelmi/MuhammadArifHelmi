@@ -14,8 +14,8 @@ const ProjectsSection = ({ showAllLink = true }) => {
 			<Reveal className="portfolio-projects-heading">
 				<SectionHeading
 					eyebrow="03 / Projects"
-					title="Systems built around real product needs."
-					description="A selection of backend-heavy products and web experiences, presented around the problem, core capabilities, and technology behind each build."
+					title="Projects built around real business needs."
+					description="A selection of enterprise systems, commerce platforms, and product websites presented around the problem, implementation, and result behind each build."
 				/>
 				{showAllLink ? (
 					<Link className="portfolio-text-link" to="/projects">
