@@ -82,15 +82,15 @@ const INFO = {
 			link: null,
 		},
 		{
-			title: "Online Invitation Platform",
-			category: "Custom invitation builder",
-			initial: "OI",
+			title: "Cucian Siap",
+			category: "Laundry service platform",
+			initial: "CS",
 			description:
-				"Designed customizable invitations for weddings, birthdays, and other events with themed templates and section-based editing.",
-			stack: ["Template Editing", "UI Components", "Personalization", "Web Delivery"],
+				"Built a laundry service platform with order handling, customer workflows, and responsive web presentation.",
+			stack: ["Workflow Management", "Customer Orders", "Responsive UI", "Web Delivery"],
 			features: [
-				"AI image generation for visuals",
-				"Faster page creation for non-technical users",
+				"Service request handling",
+				"Practical customer-facing flow",
 			],
 			linkText: "Private Product",
 			link: null,
