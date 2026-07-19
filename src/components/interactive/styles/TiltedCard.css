@@ -1,0 +1,23 @@
+.tilted-card {
+	perspective: 800px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.tilted-card:hover {
+	z-index: 4;
+}
+
+.tilted-card-inner {
+	position: relative;
+	transform-style: preserve-3d;
+	width: 100%;
+	will-change: transform;
+}
+
+@media (hover: none), (pointer: coarse) {
+	.tilted-card-inner {
+		transform: none !important;
+	}
+}

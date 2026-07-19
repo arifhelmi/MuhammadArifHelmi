@@ -9,6 +9,7 @@ import ExperienceSection from "../components/home/ExperienceSection";
 import HeroSection from "../components/home/HeroSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 import SkillsSection from "../components/home/SkillsSection";
+import ShapeGrid from "../components/interactive/ShapeGrid";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -27,6 +28,16 @@ const Homepage = () => {
 			/>
 
 			<div className="page-content home-page">
+				<div className="home-shape-grid" aria-hidden="true">
+					<ShapeGrid
+						borderColor="#ffffff"
+						direction="down"
+						hoverFillColor="#65d6c7"
+						hoverTrailAmount={5}
+						speed={0.47}
+						squareSize={54}
+					/>
+				</div>
 				<NavBar />
 				<main className="portfolio-main" aria-labelledby="portfolio-title">
 					<HeroSection />

@@ -6,21 +6,24 @@
 	overflow: clip;
 }
 
-.home-page::before {
-	background-image:
-		linear-gradient(rgba(255, 255, 255, 0.032) 1px, transparent 1px),
-		linear-gradient(90deg, rgba(255, 255, 255, 0.032) 1px, transparent 1px);
-	background-size: 68px 68px;
-	content: "";
+.home-shape-grid {
 	height: 900px;
 	left: 0;
 	mask-image: linear-gradient(180deg, #000 0%, transparent 88%);
-	opacity: 0.72;
+	opacity: 0.13;
 	pointer-events: none;
-	position: absolute;
+	position: absolute !important;
 	right: 0;
 	top: 0;
-	z-index: 0;
+	z-index: 0 !important;
+}
+
+.home-shape-grid::after {
+	background: radial-gradient(circle at 50% 30%, transparent 0%, rgba(9, 10, 12, 0.44) 72%);
+	content: "";
+	inset: 0;
+	pointer-events: none;
+	position: absolute;
 }
 
 .home-page::after {
@@ -473,6 +476,11 @@
 	border: 1px solid var(--border-color);
 	border-radius: 8px;
 	overflow: hidden;
+}
+
+.portfolio-facts-tilt {
+	align-self: start;
+	min-width: 0;
 }
 
 .portfolio-facts-header {

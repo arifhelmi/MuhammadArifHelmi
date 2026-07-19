@@ -10,6 +10,7 @@ import {
 import Reveal from "../common/Reveal";
 import INFO from "../../data/user";
 import SectionHeading from "./SectionHeading";
+import TiltedCard from "../interactive/TiltedCard";
 
 const AboutSection = () => {
 	const factIcons = [faCode, faLayerGroup, faDatabase, faPeopleGroup];
@@ -39,24 +40,33 @@ const AboutSection = () => {
 					</div>
 				</Reveal>
 
-				<Reveal as="aside" className="portfolio-facts" delay={160}>
-					<div className="portfolio-facts-header">
-						<span>Working profile</span>
-						<span className="portfolio-facts-status">ACTIVE</span>
-					</div>
-					<div className="portfolio-facts-list">
-						{INFO.quickFacts.map((fact, index) => (
-							<div className="portfolio-fact" key={fact.label}>
-								<span className="portfolio-fact-icon" aria-hidden="true">
-									<FontAwesomeIcon icon={factIcons[index]} />
-								</span>
-								<span>
-									<small>{fact.label}</small>
-									<strong>{fact.value}</strong>
-								</span>
+				<Reveal className="portfolio-facts-tilt" delay={160}>
+					<TiltedCard
+						displayOverlayContent={false}
+						rotateAmplitude={17}
+						scaleOnHover={1.2}
+						showTooltip={false}
+					>
+						<aside className="portfolio-facts">
+							<div className="portfolio-facts-header">
+								<span>Working profile</span>
+								<span className="portfolio-facts-status">ACTIVE</span>
 							</div>
-						))}
-					</div>
+							<div className="portfolio-facts-list">
+								{INFO.quickFacts.map((fact, index) => (
+									<div className="portfolio-fact" key={fact.label}>
+										<span className="portfolio-fact-icon" aria-hidden="true">
+											<FontAwesomeIcon icon={factIcons[index]} />
+										</span>
+										<span>
+											<small>{fact.label}</small>
+											<strong>{fact.value}</strong>
+										</span>
+									</div>
+								))}
+							</div>
+						</aside>
+					</TiltedCard>
 				</Reveal>
 			</div>
 		</section>
